@@ -1,70 +1,89 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Old Dreams for initial-scale</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
-  <body>
+  <link rel="stylesheet"  href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+</head>
 
-   
+<body>
 
-    <div class="main-nav">
-          <ul class="nav">
-            <h1 class="name"></li>Old Dreams for Sale</h1>
-           <li><a href="#">Home</a></li> 
-           <li><a href="#">Clothing</a></li>
-           <li><a href="#">Sports Gear</a></li>
-            <li><a href="#">Household</a></li>
-        </ul>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <div class="topnav" id="myTopnav">
+    <h1 class="name">Old Dreams for Sale</h1>
+      <a href="#">Home</a>
+      <a href="#">Clothing</a>
+      <a href="#">Sports Gear</a>
+      <a href="#">Household</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i> </a>
+  </div>
+
+ <header>
+    <img src='https://i.ibb.co/Xstf7gp/olddreamslogo.jpg' alt="boutique-image" class="header-image">
+      <h1 class="title">Recycling Dreams</h1>
+  </header>
+
+      <p>Whenever I make a purchase, it has an intended purpose. I buy things with a vision in mind for
+        how I will use it, how it will make me feel, how it will help me acheive a goal. Sometimes, that purchase
+        does everything I hoped and more. Other times, it is discarded or forgotten. That same item can be used to
+        fulfill someone else's dream. Maybe a dress I bought to help me get a dream job, you'd see as part of
+        an ensemble to make you the life of the party. Here are the things that comprised my old dreams. Look.
+        See if anything fits your new dreams. 
+      </p>
+
+
+  <main class="flex">
+    <div class="card">
+        <h2>Clothing</h2>
+          <img src="images/purple-boots.jpg" style="width:200px; height:200px;">
     </div>
 
-    <header>
-      <img src='https://i.ibb.co/Xstf7gp/olddreamslogo.jpg' alt="boutique-image" class="header-image">
-        <h1 class="title">Recycling Dreams</h1>
-    </header>
-
-    <main class="flex">
-      <div class="card">
-        <h2>Clothing</h2>
-        </div>
-
-      <div class="card">
+    <div class="card">
         <h2>Sports Gear</h2>
-        </div> 
-      
-        <div class="card">
-        <h2>Household</h2>
-         </div> 
-      
-      
+          <img src="images/bike.jpg" style="width: 200px; height:200px;">
+    </div>
 
-    </main>
-
-    <form action="index.html" method="post">
-      <h1> Sign up for our Newsletter</h1>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="user_name">
-      <label for="email">Email:</label>
-      <input type="email" id="mail" name="user_email">
-    </form>
-    
-    <footer>
-      <ul>
-        <li><a href="#" class="social twitter">Twitter  </a></li>
-        <li><a href="#" class="social facebook">Facebook  </a></li>
-        <li><a href="#" class="social poshmark">Poshmark  </a></li>
-        <li><a href="#" class="social instagram">Instagram  </a></li>
-      </ul>
-     
+    <div class="card">
+       <h2>Household</h2>
+         <img src="images/toaster.jpg" style="width: 200px; height:200px;">
+    </div>
+  </main>
 
 
+  <form action="index.html" method="post">
+    <h2> Sign up for our Newsletter</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name">
+    <label for="email">Email:</label>
+    <input type="email" id="mail" name="user_email">
 
-      <p class="copyright">Copyright 2020, TKScoggins</p>
-    </footer>
-    
-    
-    
-    </body>
+    <label for="interests">Interested in:</label>
+    <select id="interest" name="shoppers_interest">
+      <option value="clothing">Clothing</option>
+      <option value="sports_gear">Sports Gear</option>
+      <option value="household-products">Household Products</option>
+
+    </select>
+
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <footer>
+    <ul>
+      <li><a href="http://twitter.com/olddreamsforsale" class="social twitter">Twitter </a></li>
+      <li><a href="http://facebook.com/olddreamsforsale" class="social facebook">Facebook </a></li>
+      <li><a href="https://poshmark.com/closet/olddreams4sale" class="social poshmark">Poshmark </a></li>
+      <li><a href="http://instagram.com/olddreamsforsale" class="social instagram">Instagram </a></li>
+    </ul>
+  
+  <p class="copyright">Copyright 2020, TKScoggins</p>
+  </footer>
+
+  </body>
+
 </html>

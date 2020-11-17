@@ -11,49 +11,36 @@
     color: #222;
     background: white;
   }
-  /* Link Styles */
-  
-  a {
-    text-decoration: none;
-    color: #c75b18;
-  }
-  a:hover {
-    color: #e3b842;
-  }
-  
-  /* Section Styles */
-  
-  .main-nav {
-    width: 100%;
-    background: turquoise;
-    min-height: 30px;
-    padding: 10px;
-    position: fixed;
-    text-align: center;
-  }
-  .nav {
-    display: flex;
-    justify-content: space-around;
-    font-weight: 700;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .nav .name {
-    display: none;
-  
-  }
-  .nav li {
-    padding: 5px 10px 10px 10px;
-  }
-  .nav a {
-    transition: all .5s;
-  }
-  .nav a:hover {
-    color: white
-  }
-  
-  header {
+
+/* Add turquoise color to background*/
+ .topnav {
+  background-color: turquoise;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: #c75;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+} 
+
+header {
     text-align: center;
     background: url('https://images.pexels.com/photos/264480/pexels-photo-264480.jpeg?cs=srgb&dl=pexels-pixabay-264480.jpg&fm=jpg') no-repeat top center;
     background-size: 100% 100%;
@@ -95,19 +82,27 @@
   .card:hover {
     border-color: turquoise;
   }
-
-
-    
+   
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
   footer {
     width: 100%;
     min-height: 30px;
     padding: 20px 0 40px 20px;
   }
   
+  
   footer .copyright {
     top: -4px;
     margin-right: 40px;
-    font-size: .75em;
+    font-size: .50em;
   }
   
   footer ul {
@@ -120,7 +115,15 @@
     display: inline-block;
   }
   
-
+ /* Link Styles */
+  
+   a {
+     text-decoration: none;
+     color: #c75b18;
+  }
+  a:hover {
+     color: #e3b842;
+  }
   
  
   @media screen and (min-width: 720px) {
@@ -165,5 +168,26 @@
     }
   
   
-  
-  
+   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} 
