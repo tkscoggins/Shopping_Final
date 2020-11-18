@@ -1,6 +1,6 @@
 let html ='';
 
-for ( let i =0; i < SVGFEFuncAElement.length; i++) {
+for ( let i =0; i < sale.length; i++) {
     let sale = sale[i];
     html += `
     <h2>${sale.name}</h2>
