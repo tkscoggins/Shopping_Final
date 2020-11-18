@@ -1,4 +1,4 @@
-/* Global Layout Set-up */
+/* Mobile First */
 * { 
     box-sizing: border-box;
   }
@@ -12,13 +12,13 @@
     background: white;
   }
 
-/* Add turquoise color to background*/
+  
+/* Navigation and Header */
  .topnav {
   background-color: turquoise;
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
@@ -29,13 +29,12 @@
   font-size: 18px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: #c75;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
+/*Hide the Link*/
 .topnav .icon {
   display: none;
 } 
@@ -80,7 +79,7 @@ header {
   }
 
   .card:hover {
-    border-color: turquoise;
+    border-color: yellow;
   }
    
   #page-container {
@@ -88,11 +87,11 @@ header {
     min-height: 100vh;
   }
   
+  /* Footer height */
   #content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
+    padding-bottom: 2.5rem;    
   }
   
- 
   footer {
     width: 100%;
     min-height: 30px;
@@ -134,9 +133,7 @@ header {
         justify-content: space-around;
         margin: 0 auto;
     }
-    
-    
-
+      
     }
     header {
       min-height: 450px;
@@ -164,7 +161,7 @@ header {
       font-size: 1.3em;
       max-width: 1200px;
       margin: 40px auto;
-      background-color: pink;
+      background-color: turquoise;
     }
   
   
