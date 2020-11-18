@@ -1,5 +1,5 @@
-/* validate an email address */ 
+/* validate an email address */     
 
-function isValidEmail(email){
+function isValidEmail(email) {
     return /^[^@]+@[^@.]+\.[a-z]+$/i.test(email);
 }
