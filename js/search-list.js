@@ -7,8 +7,8 @@ const inStock=['boots','sandals', 'heels', 'bikes', 'skateboards', 'wheels', 'be
         let message;
 
         if (inStock.includes (search)) {
-            message=`Yes, we have <strong> ${search}<strong>.`;
+            message=`<strong>Yes, we have ${search}<strong>.`;
         } else {
-                message=`Sorry we do not have <strong>${search}<strong>.`;
+                message=`<strong>Sorry we do not have ${search}<strong>.`;
             }
-        document.querySelector('main').innerHTML= `<p>${message}</p>`;    
+        document.querySelector('section').innerHTML= `<p>${message}</p>`;    
