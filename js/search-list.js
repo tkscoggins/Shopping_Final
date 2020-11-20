@@ -1,5 +1,6 @@
 /*search through stock*/
 
+//array for inventory 
 
 const inStock=['boots','sandals', 'heels', 'bikes', 'skateboards', 'wheels', 'bearings', 'toasters',
         'mixers', 'pans', 'dishes', 'sheets', 'chairs'];

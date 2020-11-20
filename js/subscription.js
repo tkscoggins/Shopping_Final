@@ -1,4 +1,5 @@
 //confirms subscription upon email entry
+
 function subscribeFunction(){
     var fullName = document.getElementById("name").value;
     // var fullName = "Tina";

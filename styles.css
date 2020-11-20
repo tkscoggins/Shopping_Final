@@ -12,8 +12,8 @@
   }
   
   
-  /*Test Area*/
-  /* Navigation and Header */
+  /*Navigation and Header*/
+
   .topnav {
   background-color: turquoise;
   overflow: hidden;
@@ -62,7 +62,9 @@
   h1 {
   color: white;
   }
-  
+
+/*Card and nth child for category photo image links*/
+
   .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -84,7 +86,8 @@
   position: relative;
   min-height: 100vh;
   }
-  /* Footer height */
+
+  /* Footer  */
   #content-wrap {
   padding-bottom: 2.5rem; 
   }
@@ -116,6 +119,8 @@
   color: #e3b842;
   }
 
+  /*Media Queries*/
+  
   @media screen and (min-width: 720px) {
   .flex {
   display: flex;
