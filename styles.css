@@ -17,10 +17,11 @@
   .topnav {
   background-color: turquoise;
   overflow: hidden;
+  display: flex;
   }
   
   .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -159,3 +160,9 @@
       background-color: gold;
     }
   }
+  /* On screens that are 992px or less, set navbar to horizontal */
+@media screen and (max-width: 992px) {
+  .topnav {
+    flex-direction: column;
+  }
+}

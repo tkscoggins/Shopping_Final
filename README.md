@@ -2,7 +2,7 @@
 This is the final project for Code Louisville. It is for a shopping site.
 There is a brief description of the type of shopping site and includes links to the shopping categories through top links and by clicking on the images in each card category. There are bottom links in the footer which take you to additional social media sites that promote the sale items. There is a logo in the center that expands on hover.
 
-The site includes the required mobile first approach and is made using flex elements with 2 media querys for mobile and desktop layouts. The site scales down to a single column view on mobile and the background color changes. The .nth-child is used on the cards in color display of the cards holding clickable images.
+The site includes the required mobile first approach and is made using flex elements with media querys for mobile and desktop layouts. The site scales down to a single column view on mobile and the background color changes. The navigation links flex from horizontal to vertical for mobile devices. The .nth-child is used on the cards in color display of the cards holding clickable images.
 
 When the site loads, there is an inventory search box using a javascript array. The response to the search displays on the page in bold.
 
